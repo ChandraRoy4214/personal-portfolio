@@ -2,7 +2,8 @@ import React from 'react'
 import styled from "styled-components"
 import Image from "../assets/images/frontend.svg"
 import Image2 from "../assets/images/backend.svg"
-import Js from "../assets/images/js.png"
+import Js from "../assets/images/js.png";
+
 
 const About = () => {
     return (
@@ -12,21 +13,21 @@ const About = () => {
                 <h2> I am an undergrad student at Hindustan University,  Chennai, India. Currently pursuing Electronics and Communication Engineering. On day to day basis I work with Intresting technologies like React, Node, Express, MongoDB etc. to build some amazing websites. Knowledge gives the  power. The more you learn, the lesser time it will take to learn even more.</h2>
             </div>
             <div className = "skills">
-                <article>
+                <article className = "skill" >
                     <img src={Image} alt="" />
                     <h1>Front-end Developer</h1>
                     <p>
                         HTML and CSS are the beginning of everything you see on the web page! HTML is the foundation of all web pages. It gives the structure to a web page, while CSS defines its style. Learning both will gives you a taste of super powers.
                     </p>
                 </article>
-                <article>
+                <article className = "skill" >
                     <img src={Js} className = "js-img" alt="" />
                     <h1>JavaScript Geek</h1>
                     <p>
                         JavaScript is commonly used for creating web pages. It allows us to add dynamic behavior to the webpage and add special effects to the webpage. JavaScript helps us to execute complex actions and also enables the interaction of websites with visitors.
                     </p>
                 </article>
-                <article id ="bod" >
+                <article id ="bod" className = "skill" >
                     <img src={Image2} alt="" />
                     <h1>MERN Stack</h1>
                     <p>
@@ -37,6 +38,7 @@ const About = () => {
             <div className="btn" >
                 <a href="/about">about me</a>
             </div>
+
         </Wrapper>
     )
 }
@@ -47,13 +49,11 @@ const Wrapper = styled.section`
         color: white;
         padding: 7rem;
         text-align : center;
-        width: 100%;
+        max-width: 100%;
         height: 85vh;
         line-height: 1.7;
         margin-bottom: 25rem;
-        #bod{
-            border-right: none;
-        }
+        
         h1{
             font-size: 32px;
             font-weight: 700;
@@ -70,6 +70,9 @@ const Wrapper = styled.section`
         .heading{
             margin-bottom: -25px;
         }
+        #bod{
+            border-right: none;
+        }
         .skills{
             display: flex;
             flex-wrap: wrap;
@@ -77,9 +80,12 @@ const Wrapper = styled.section`
             background-color: white;
             max-width: 1170px;
             margin: 0 auto;
-            box-shadow : 2px 2px 100px rgba(0,0,0,0.2);;
+            box-shadow : 2px 2px 100px rgba(0,0,0,0.2);
             border-radius: 20px;
-            border:0.5px solid rgba(0,0,0,0.2) ;
+            border:0.5px solid rgba(0,0,0,0.2);
+        } 
+         .skill{
+            min-width: 387px;
         }
         p{
             font-size: 16px;
@@ -126,28 +132,52 @@ const Wrapper = styled.section`
         transition: all ease 1s;
     }
     }
-    @media (max-width: 957px){
+    @media (max-width: 1450px){
         width: 97vw;
         padding: 5vw;
         margin: 0 auto;
+        margin-bottom: 57rem;
         
         .center{
-            /* background-color: red; */
             width: 100%;
         }
         h1{
+            margin-top: 2rem;
             font-size: 24px;
             font-weight: 700;
         }
         h2{
             margin-top: 1.4rem;
-            margin-bottom: 8.5rem;
+            margin-bottom: 4.5rem;
             font-weight: 400;
             font-size: 18px;
         }
+        .heading{
+            margin-bottom: 2rem;
+            margin-top: 5rem;
+        }
+    article{
+        margin: 0 auto;
+        margin-top: 20px;
+        border: 2px solid rgba(0,0,0,0.2);
+        border-radius: 15px;
     }
-
+    .skills{
+        max-width: 85vw;
+        gap: 1.5rem;
+        border: none;
+        box-shadow: none;
+    }
+    }
+    @media (max-width: 1450px){
+        #bod{
+            border-right: 2px solid rgba(0,0,0,0.2);
+        }
+    }
+   
 
 `
+
+
 
 export default About

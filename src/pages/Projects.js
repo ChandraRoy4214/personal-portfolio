@@ -18,6 +18,7 @@ const Projects = () => {
 const Wrapper = styled.div`
     height: 46vh;
     width: 100%;
+    /* margin-bottom: -145rem; */
     display: grid;
     place-items: center;
     color: var(--title-clr);
@@ -51,6 +52,17 @@ const Wrapper = styled.div`
             font-weight: 700;
         }
     }
+    /* footer top adjustments */
+
+    /* @media (min-width: 721px){
+        margin-bottom: -75rem;
+    }
+    @media (min-width: 1170px){
+        margin-bottom: -72rem;
+    }
+    @media (min-width: 1350px){
+        margin-bottom: -52rem;
+    } */
 
 `
 

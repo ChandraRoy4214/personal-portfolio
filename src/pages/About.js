@@ -56,7 +56,7 @@ const About = () => {
 }
 
 const Wrapper = styled.section`
-        margin-bottom: -50rem;
+        margin-bottom: -145rem;
         text-align: center;
     .basic{
         width: 90vw;
@@ -161,6 +161,16 @@ const Wrapper = styled.section`
             width: 345px;
 
         }
+    }
+
+    @media (min-width: 721px){
+        margin-bottom: -75rem;
+    }
+    @media (min-width: 1170px){
+        margin-bottom: -72rem;
+    }
+    @media (min-width: 1350px){
+        margin-bottom: -52rem;
     }
     
 `

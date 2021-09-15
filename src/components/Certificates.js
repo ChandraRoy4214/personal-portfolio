@@ -19,7 +19,7 @@ const Certificates = () => {
 
                  return <Certificate key = {index} {...item} />  }) }
             </div>
-            <div className = "btn">
+            <div className = "btn res-btn">
                     <Link to="/files/chandraRoy.pdf" target="_blank" download><span> <FaDownload/> </span> Resume  </Link>
                 </div>
         </Wrapper>
@@ -30,6 +30,10 @@ const Wrapper = styled.section`
         text-align : center;
         color: #141c3a;
         padding-top: 9rem;
+        margin: 0 auto;
+        max-width: 95vw;
+        /* background-color: red; */
+        
         h1{
             font-size: 32px;
             font-weight: 700;
@@ -43,13 +47,14 @@ const Wrapper = styled.section`
 
     .certificates{
         max-width: 1170px;
-        width: 95%;
         height: auto;
         display: flex;
+        gap: 1rem;
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 0 auto;
         border-radius: 15px;
+        
     }
 
     .btn{
@@ -70,14 +75,37 @@ const Wrapper = styled.section`
         transition: all ease 1s;
     }
     }
-    @media (max-width: 657px){
+    @media (max-width: 957px){
         .certificates{
-            width: 75vw;
+            max-width: 85vw;
+            margin: 0 auto;
+            margin-bottom: 3rem;
+            
         }
-        
+        .res-btn{
+            margin-bottom: 5rem;
+        }
+   
+    }
+    @media (min-width: 350px){
+        margin-top: 85rem;
+    }
+    @media (min-width: 650px){
+        margin-top: 80rem;
+    }
+   
+    @media (min-width: 938px){
+        margin-top: -10rem;
+    }
+    @media (min-width: 1270px){
+        margin-top: -9rem;
+    }
+    @media (min-width: 1450px){
+        margin-top: -5rem;
     }
 
-`
+    
 
+`
 
 export default Certificates

@@ -18,7 +18,7 @@ const Wrapper = styled.div`
     background-color: #141c3a;
     width:78vw;
     margin: 0 auto;
-    margin-top: 60rem;
+    margin-top: 145rem;
     height: 167px;
     position: relative;
     top: 100px;
@@ -70,12 +70,25 @@ const Wrapper = styled.div`
             margin: 0 auto ;
         }
     }
-    /* @media (max-width: 1170px){
-        margin-top: 80rem;
-    } */
-    /* @media (max-width: 1170px){
-        margin-top: 155rem;
-    } */
+    
+    @media (min-width: 651px){
+        margin-top: 145rem;
+    }
+    
+    @media (min-width: 721px){
+        margin-top: 138rem;
+    }
+    @media (min-width: 821px){
+        margin-top: 72rem;
+    }
+    @media (min-width: 1121px){
+        margin-top: 78rem;
+    }
+   
+    
+    @media (min-width: 1400px){
+        margin-top: 52rem;
+    }
 
 `
 

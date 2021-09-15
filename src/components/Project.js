@@ -15,14 +15,17 @@ const Project = ({text, link, title}) => {
 
             <a href= {link} > <p>visit website</p> </a>
             </div>
+
         </Wrapper>
     )
 }
 
 const Wrapper = styled.article`
-        width: 32%;
+        /* width: 32%; */
+        width: 372px;
+        margin: 0 auto;
         height: 325px;
-        padding: 2rem;
+        padding: 1rem;
         background-color: white;
         margin-bottom: 0rem;
         color: #141c3a;
@@ -65,12 +68,7 @@ const Wrapper = styled.article`
             line-height: 1.6;
             width: 87%;
         }
-        @media (max-width: 967px){
-            min-width: 387px;
-        }
-        @media (max-width: 967px){
-            margin-bottom: 2rem;
-        }
+
         .tit{
             font-size: 24px;
             font-weight: 650;
@@ -83,6 +81,10 @@ const Wrapper = styled.article`
             opacity: 0.5;
             margin: 0 auto;
             margin-bottom: 2rem;
+        }
+
+        @media (max-width: 1170px){
+            
         }
 `
 

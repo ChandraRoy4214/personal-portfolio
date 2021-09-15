@@ -24,7 +24,6 @@ const Wrapper = styled.footer`
     position: absolute;
     height: 84vh;
     width: 100%;
-  
     text-align: center;
     color: rgba(255, 255, 255, 0.75);
     img{

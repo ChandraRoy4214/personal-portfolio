@@ -9,7 +9,7 @@ const About = () => {
         <Wrapper>
             
                 <div className = "section-center center" >
-                <h1>My Startups Projects</h1>
+                <h1 className ="heading" >My Startups Projects</h1>
                 <h2>I'm a bit of a digital product junky. Over the years, I've used hundreds of web and mobile apps in different industries and verticals. Eventually, I decided that it would be a fun challenge to try building on my own. Here are some samples of it.</h2>
             </div>
         
@@ -56,12 +56,11 @@ const Wrapper = styled.section`
         .projects{
             color: #141c3a;
             display: flex;
+            gap: 1.5rem;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            margin: 2rem auto;
             max-width: 1170px;
-            min-height: 99vh;
             margin: 0 auto;
             
         }
@@ -103,31 +102,33 @@ const Wrapper = styled.section`
         }
     }
     @media (max-width: 1170px){
-        width: 97vw;
         padding: 5vw;
         margin: 0 auto;
+        height: 75vh;
         .center{
-            
             padding: 2vw;
             width: 100%;
             margin: 0 auto;
         }
-        h1{
-            font-size: 24px;
-            font-weight: 700;
-        }
+        
         h2{
             margin-top: 1.4rem;
-            margin-bottom: 8.5rem;
+            margin-bottom: 5.5rem;
             font-weight: 400;
             font-size: 18px;
+        }
+        .heading{
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 4rem;
+            margin-bottom: 2rem;
         }
         .projects{
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin: 0 auto;
-            min-width: 90vw;
+            
         }
     }
     @media (max-width: 568px){
@@ -136,9 +137,10 @@ const Wrapper = styled.section`
             display: flex;
             justify-content: center;
             margin: 0 auto;
-        
         }
+        width: 100%;
     }
+
 
 `
 

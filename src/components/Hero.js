@@ -37,14 +37,14 @@ const Wrapper = styled.section `
         img{
             width: 210px;
             height: 250px;
-            margin: 45px 0px 55px 0px ;  // TLBR
+            margin: 45px 0px 95px 0px ;  // TLBR
          }
     }
-    @media (max-width: 657px){
+    @media (max-width: 757px){
         .hero-foot{
-            /* background-color: red; */
-            max-width: 85vw;
+            max-width: 85%;
             margin: 0 auto;
+            margin-bottom: -1.2rem;
             height: 250px;
         
         img {
@@ -53,6 +53,11 @@ const Wrapper = styled.section `
             display: block;
         }
 
+        }
+    }
+    @media (min-width: 307px){
+        .hero-foot{
+            margin-bottom: -2.5rem;
         }
     }
 `

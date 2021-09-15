@@ -8,6 +8,7 @@ import Certificates from "./Certificates"
 import ContactTop from "./ContactTop"
 
 
+
 export {
     Navbar, Hero, FeaturedProjects, About, Tech, Certificates, ContactTop, Footer
 }
