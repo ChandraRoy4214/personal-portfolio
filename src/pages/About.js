@@ -18,11 +18,13 @@ const About = () => {
             </div>
             <section className="about basic" >
                 <div className="title" >
-                    <h1>About Me</h1>
-                    <h2 className="sub" >
-                        I love your Curiosity! Here are some Intresting facts about me that I owned along my Journey so far.
-                    </h2>
+                        <h1>About Me</h1>
+                        <div className = "line" ></div>
+                        <h2 className="sub" >
+                            I love people who are curious like you.
+                        </h2>
                 </div>
+
                 {/* This is where the info about me is displayed */}
                 <div className="box" >
                     <article className="left" >
@@ -34,24 +36,26 @@ const About = () => {
                         <h3>Finally all I want to say to you is, As a Man thinketh so is he. Believe in Universe. and take one day at a time. </h3>
                       
                     </article>
+                
                     <article className="right" >
-                        <div className = "my-image" >
-                            <img src={lofi} alt="lofi" className ="my-img"/>
-                        </div>
+                            <div className = "my-image" >
+                                <img src={lofi} alt="lofi" className ="my-img"/>
+                            </div>
                     </article>
                 </div>
             </section>
 
             <section className="basic" >
 
-                <div className="title" >
-                    <h1>My Tech Stack</h1>
-                    <h2 className="sub" >Here are some of the technologies which I use in my day to day work.</h2>
-                </div>
+                    <div className="title" >
+                        <h1 className = "x" >My Tech Stack</h1>
+                        <div className = "line" ></div>
+                        <h2 className="sub" >Here are some of the technologies which I use in my day to day work.</h2>
+                    </div>
 
-                <div className="techs" >
-                    {data.map((item, index) => { return <Tech key={index} {...item} /> })}
-                </div>
+                    <div className="techs" >
+                        {data.map((item, index) => { return <Tech key={index} {...item} /> })}
+                    </div>
             </section>
 
                 <div className = "btn res-btn">
@@ -69,27 +73,27 @@ const Wrapper = styled.section`
         max-width: 1170px;
         margin: 0 auto;
         min-height: 65vh;
-        padding: 2.5rem;
+        text-align: center;
+        padding: 2rem;
         border-radius: 20px;
         border:0.5px solid rgba(0,0,0,0.2) ;
     }
     .sub-text{
         margin-bottom: 20px;
-        /* margin-left: -50px; */
     }
 
     .about{
         margin-bottom: 5rem;
     }
-
+    color: #141c3a;
+    
     .techs{
         min-height: 40vh;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
     }
-    color: #141c3a;
         h1{
             font-size: 32px;
             font-weight: 700;
@@ -107,28 +111,29 @@ const Wrapper = styled.section`
             font-weight: 500;
             font-size: 18px;
         }
-         .box{
-            width: 100%;
-            height: 100%;
+        .about{
+            border: 1px solid rgba(0,0,0,0.2);
+            margin: 0rem 0.5rem 1rem 0.5rem;
+            border-radius: 15px;
+        }
+        .box{
+            max-width: 1170px;
+            height: auto;
+            margin:  0 auto;
             display: flex;
+            text-align: center;
             flex-wrap: wrap;
+            align-items: center;
             justify-content: space-between;
         }
-       .left, .right{
-           min-width: 350px;
-           min-height: 450px;
-           margin: 0 auto;
-           width: 45%;
-           text-align: start;
-           text-indent: 10px;
-        }
-        .left{
-            /* background-color: blue; */
-            width: 44%;
-            
-        }
-        .right{
+       /* .left, .right{
+            width: 45%;
             margin: 0 auto;
+            height: 45%;
+            
+        } */
+        .left{
+            text-align: start;
         }
         
         .btn{
@@ -149,10 +154,20 @@ const Wrapper = styled.section`
         transition: all ease 1s;
     }
     }
+    .line{
+            width: 95px;
+            height: 1.8px;
+            border-radius: 20%;
+            background-color: var(--secondary-bg-color);
+            opacity: 0.5;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
     
     .my-image{
-        width: 487px;
-        height: 338px;
+        max-width: 8vw;
+        min-width: 100%;
+        height: 308px;
         margin: 0 auto;
     }
     .my-img{
@@ -174,18 +189,96 @@ const Wrapper = styled.section`
         }
         .sub{
             margin-bottom: 25px;
+            margin-top: -18px;
             font-size: 18px;
             font-weight: 300px;
+        }
+        .x{
+            width: 70vw;
+            text-align: center;
         }
         
         .left, .right{
             max-width: 100%;
         }
         .my-image{
-            width: 345px;
+            min-width: 80vw;
+            margin: 0 auto;
 
         }
     }
+
+    @media (max-width: 432px){
+        .sub{
+            font-size: 18px;
+            font-weight: 300;
+        }
+        .sub-text{
+            font-size: 24px;
+            font-weight: 450;
+            max-width: 85vw;
+        }
+        h3{
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+    }
+    @media (min-width: 432px){
+        .sub{
+            font-size: 18px;
+            font-weight: 300;
+        }
+        .sub-text{
+            font-size: 24px;
+            font-weight: 450;
+            max-width: 85vw;
+        }
+        .about{
+            padding: 1rem;
+            margin: 0rem 1rem 2rem 1rem;
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+        h3{
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+        .box{
+            max-width: 970px;
+            margin: 0 auto;
+        }
+        .left{
+            min-width: 48%;
+            align-items: center;
+        }
+        .right{
+            width: 48%;
+        }
+        .about{
+            margin-bottom: 2rem;
+        }
+
+    }
+    @media (min-width: 992px){
+        .box{
+            display: flex;
+            flex-wrap: wrap;
+            .my-image{
+                min-height: 100%;
+            }
+            .left{
+                text-align: center;
+                width: 300px;
+            }
+        }
+
+
+    }
+   
+
+    /* below code is about some project specific code */
 
     @media (min-width: 721px){
         margin-bottom: -75rem;

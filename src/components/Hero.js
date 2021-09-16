@@ -72,6 +72,13 @@ const Wrapper = styled.section `
                 height: 80%;
                 max-width: 100%;
             }
+            h1{
+                font-size: 2rem;
+                font-weight: 500;
+            }
+            h2{
+                font-size: 18px;
+            }
         }
         .hero-foot{
             margin-bottom: -4.5rem;

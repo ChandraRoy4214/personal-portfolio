@@ -83,9 +83,6 @@ const Wrapper = styled.article`
             margin-bottom: 2rem;
         }
 
-        @media (max-width: 1170px){
-            
-        }
 `
 
 export default Project

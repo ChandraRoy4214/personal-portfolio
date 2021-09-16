@@ -177,11 +177,7 @@ const Wrapper = styled.section`
     }
    
     @media (max-width: 485px){
-        .skills{
-            /* background-color: limegreen; */
-        }
         .skill{
-            /* background-color: red; */
             width: 90vw;
             height: auto;
             p{

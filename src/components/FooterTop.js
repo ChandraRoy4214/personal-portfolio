@@ -91,9 +91,9 @@ const Wrapper = styled.div`
     }
     @media (max-width: 432px){
         a{
-            padding: 0.5rem 1rem;
-            font-size: 15px;
-            width: 180px;
+            padding: 1rem;
+            font-size: 18px;
+            width: 175px;
             text-align: center;
         }
     }

@@ -29,6 +29,7 @@ const Wrapper = styled.article`
                 font-weight: 800;
                 opacity: 0.8;
                 color: var(--secondary-bg-color);
+                text-align: center;
         }
         &:hover{
             transition: all ease 0.6s;
