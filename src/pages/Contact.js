@@ -10,7 +10,7 @@ const Contact = () => {
             <div>
               <ContactTop info = {heading} />
             </div>
-            <form action="" method = "POST">
+            <form action="https://formspree.io/f/xzbyoepy" method = "POST">
               <div className = "first center">
                 <label htmlFor="name"> <h2>Name</h2>
                   <div>

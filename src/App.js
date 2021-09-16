@@ -34,7 +34,6 @@ function App() {
                 </Route>
                 <Route path = "/contact">
                     <Contact/>
-                    <Footer/>
                 </Route>
                 <Route path = "*">
                     <Error/>

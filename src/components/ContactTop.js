@@ -11,7 +11,7 @@ const ContactTop = ({info}) => {
                 <img src={avatar} alt="contact-avatar" />
             </div>
                     
-            <h1>{info}</h1>
+            <h1 className = "main-text">{info}</h1>
                     
         </Wrapper>
     )
@@ -36,6 +36,12 @@ const Wrapper = styled.div`
         font-size: 45px;
         font-weight: 400;
         margin: 0 auto;
+    }
+    @media (max-width: 460px){
+      .main-text{
+          font-size: 2rem;
+          max-width: 85%;
+      }
     }
 `
 
