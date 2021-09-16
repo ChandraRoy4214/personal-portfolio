@@ -19,8 +19,8 @@ const Wrapper = styled.div`
         width: 100%;
         display :block;
         border-radius: 15px;
-        width: 373px;
-        height: 250px;
+        height: auto;
+        max-height: 250px;
         object-fit: cover;
         border:0.5px solid rgba(0,0,0,0.2);
     }
@@ -28,7 +28,7 @@ const Wrapper = styled.div`
         box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
     }
     .container{
-        height: 275px;
+        max-height: 275px;
     }
 
     &:hover{

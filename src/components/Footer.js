@@ -11,9 +11,11 @@ const Footer = () => {
                 <h1>Living, Learning & Leveling up</h1>
             <h1>One Day at a Time.</h1>
             </div>
-            <div className = "social-icons">
-                <Icons/>
-            </div>
+            <section className = "social-icons">
+                <div className = "xyz" >
+                    <Icons/>
+                </div>
+            </section>
             <p>Handcrafted by me &copy; <span>{new Date().getFullYear()}</span> </p>
         </Wrapper>
     )
@@ -25,11 +27,12 @@ const Wrapper = styled.footer`
     height: 84vh;
     min-height: 32rem;
     width: 100%;
+   
     text-align: center;
     color: rgba(255, 255, 255, 0.75);
     img{
         margin-top: 12.5rem;
-        margin-bottom: -2rem;
+        margin-bottom: -3rem;
         color: white;
         width: 50px;
         height: 50px;
@@ -41,9 +44,29 @@ const Wrapper = styled.footer`
     p{
         font-weight: 400;
         font-size: 18px;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    .xyz{
+        margin: 0 auto;
+        width: 75%;
+        height: 100%;
+    }
+    @media (max-width: 342px){
+        p{
+            font-size: 15px;
+            max-width: 90%;
+        }
+    }
+    @media (min-width: 418px){
+        .xyz{
+            width: 100%;
+        }
     }
     .social-icons{
-        width: 420px;
+        max-width: 532px;
+        width: 75vw;
+        height: auto;
         margin: 3.5rem auto;
         text-align : center;
     }

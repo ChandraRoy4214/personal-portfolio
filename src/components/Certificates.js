@@ -38,8 +38,8 @@ const Wrapper = styled.section`
             font-weight: 700;
         }
         h2{
-            margin-top: 0.9rem;
-            margin-bottom: 5rem;
+            max-width: 80vw;
+            margin: 1rem auto 5rem auto;
             font-weight: 450;
             font-size: 18px;
         }
@@ -86,8 +86,14 @@ const Wrapper = styled.section`
         }
    
     }
+    @media (min-width: 250px){
+        min-width: 100%;
+        margin-top: 95rem;
+
+    }
     @media (min-width: 350px){
         margin-top: 85rem;
+
     }
     @media (min-width: 650px){
         margin-top: 80rem;

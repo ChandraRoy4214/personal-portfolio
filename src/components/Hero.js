@@ -60,6 +60,23 @@ const Wrapper = styled.section `
             margin-bottom: -2.5rem;
         }
     }
+    @media (max-width: 632px){
+        height: auto;
+        .hero-head{
+            margin: -3rem 1rem -5rem 1rem ;
+            
+            img{
+                width: 80%;
+                max-width: 210;
+                max-height: 180px;
+                height: 80%;
+                max-width: 100%;
+            }
+        }
+        .hero-foot{
+            margin-bottom: -4.5rem;
+        }
+    }
 `
 
 

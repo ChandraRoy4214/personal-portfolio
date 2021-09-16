@@ -89,6 +89,14 @@ const Wrapper = styled.div`
     @media (min-width: 1410px){
         margin-top: 52rem;
     }
+    @media (max-width: 432px){
+        a{
+            padding: 0.5rem 2rem;
+        }
+    }
+    @media (max-width: 360px){
+        margin-top: 153rem
+    };
 
 `
 

@@ -19,8 +19,9 @@ const Wrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 auto;
+    gap: 0.5rem;
     span{
+        margin: 0 auto;
         color: white;
         display : inline-block;
         border: 2px solid rgba(255, 255, 255, 0.45);
@@ -34,6 +35,9 @@ const Wrapper = styled.div`
         color: #7510f7 ;
         background-color: white;
         transition: all ease 1s;
+    }
+    a{
+        display: block;
     }
 `
 

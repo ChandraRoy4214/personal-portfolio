@@ -86,19 +86,19 @@ const Wrapper = styled.section`
             border:0.5px solid rgba(0,0,0,0.2);
         } 
          .skill{
-            min-width: 387px;
+            /* min-width: 387px; */
         }
         p{
             font-size: 16px;
             font-weight: 400;
             color: var(--title-clr);
             line-height: 2;
-            width: 82%;
+            width: 85%;
             margin: 0 auto;
         }
         article{
-            padding: 20px;
-            width: 33.333%;
+            padding: 1rem;
+            max-width: 387px;
             color: var(--title-clr);
             height: 420px;
             border-right: 0.5px solid rgba(0,0,0,0.2);
@@ -176,6 +176,19 @@ const Wrapper = styled.section`
         }
     }
    
+    @media (max-width: 485px){
+        .skills{
+            /* background-color: limegreen; */
+        }
+        .skill{
+            /* background-color: red; */
+            width: 90vw;
+            height: auto;
+            p{
+                width: 95%;
+            }
+        }
+    }
 
 `
 
