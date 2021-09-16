@@ -6,7 +6,7 @@ import Icons  from "./Icons";
 const Footer = () => {
     return (
         <Wrapper>
-            <a href="https://www.chandraroy.in"><span><img src={logo} alt="logo" /></span></a>
+            <a href="/"><span><img src={logo} alt="logo" /></span></a>
             <div className = "footer-text" >
                 <h1>Living, Learning & Leveling up</h1>
             <h1>One Day at a Time.</h1>
@@ -23,6 +23,7 @@ const Wrapper = styled.footer`
     background-color: var(--secondary-bg-color);
     position: absolute;
     height: 84vh;
+    min-height: 32rem;
     width: 100%;
     text-align: center;
     color: rgba(255, 255, 255, 0.75);

@@ -35,7 +35,8 @@ const Wrapper = styled.section`
         background-color: var(--secondary-bg-color);
         color: white;
         padding: 7rem;
-        height: 70vh;
+        height: 72vh;
+        min-height: 32rem;
         text-align : center;
         width: 100%;
         line-height: 1.7;

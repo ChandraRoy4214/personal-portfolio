@@ -86,7 +86,7 @@ const Wrapper = styled.div`
     }
    
     
-    @media (min-width: 1400px){
+    @media (min-width: 1410px){
         margin-top: 52rem;
     }
 

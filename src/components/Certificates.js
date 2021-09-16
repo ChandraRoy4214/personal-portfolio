@@ -32,7 +32,6 @@ const Wrapper = styled.section`
         padding-top: 9rem;
         margin: 0 auto;
         max-width: 95vw;
-        /* background-color: red; */
         
         h1{
             font-size: 32px;

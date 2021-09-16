@@ -6,7 +6,7 @@ const Navbar = () => {
         <Wrapper>
             <div className = "nav-center" >
                 <div className = "nav-left">
-                    <a href="https://www.chandraroy.in"> <span> <img src={logo} alt="" /> </span> </a>
+                    <a href="/"> <span> <img src={logo} alt="" /> </span> </a>
                 </div>
                 <div className = "nav-right btn">
                     <a href="/contact" >say hello</a>

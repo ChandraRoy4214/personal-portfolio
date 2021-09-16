@@ -4,6 +4,8 @@ import { Tech } from "../components";
 import data from "../_data/techs";
 import { ContactTop } from "../components";
 import lofi from "../assets/certs/lofi.jpg";
+import {FaDownload} from "react-icons/fa";
+import {Link} from "react-router-dom"
 
 
 
@@ -51,6 +53,10 @@ const About = () => {
                     {data.map((item, index) => { return <Tech key={index} {...item} /> })}
                 </div>
             </section>
+
+                <div className = "btn res-btn">
+                    <Link to="/files/chandraRoy.pdf" target="_blank" download><span> <FaDownload/> </span> Resume  </Link>
+                </div>
         </Wrapper>
     )
 }
@@ -125,6 +131,24 @@ const Wrapper = styled.section`
             margin: 0 auto;
         }
         
+        .btn{
+        a{
+            margin: 2.5rem 0;
+            display: inline-block;
+            color: var(--secondary-bg-color);
+            font-size: 20px;
+            font-weight: 500;
+            text-transform: capitalize;
+            border: 2px solid var(--secondary-bg-color);
+            border-radius: 9px;
+            padding: 8px 40px;
+        }
+        a:hover{
+        background-color: #7510f7;
+        color: white;
+        transition: all ease 1s;
+    }
+    }
     
     .my-image{
         width: 487px;

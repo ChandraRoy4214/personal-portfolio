@@ -51,6 +51,7 @@ const Wrapper = styled.section`
         text-align : center;
         max-width: 100%;
         height: 85vh;
+        min-height: 32rem;
         line-height: 1.7;
         margin-bottom: 25rem;
         
@@ -60,7 +61,7 @@ const Wrapper = styled.section`
         }
         h2{
             margin-top: 2.4rem;
-            margin-bottom: 8.5rem;
+            margin-bottom: 6.5rem;
             font-weight: 400;
             font-size: 18px;
         }
@@ -133,7 +134,6 @@ const Wrapper = styled.section`
     }
     }
     @media (max-width: 1450px){
-        width: 97vw;
         padding: 5vw;
         margin: 0 auto;
         margin-bottom: 57rem;
@@ -154,7 +154,7 @@ const Wrapper = styled.section`
         }
         .heading{
             margin-bottom: 2rem;
-            margin-top: 5rem;
+            margin-top: 2rem;
         }
     article{
         margin: 0 auto;
@@ -170,6 +170,7 @@ const Wrapper = styled.section`
     }
     }
     @media (max-width: 1450px){
+        width: 100%;
         #bod{
             border-right: 2px solid rgba(0,0,0,0.2);
         }
